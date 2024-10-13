@@ -1,0 +1,84 @@
+2024-10-11 11:39:06.937 | INFO     | __main__:get_article_status:18 - 11-10-2024
+2024-10-11 11:39:06.938 | INFO     | files_work.delete_old_files:delete_old_log_files:24 - File debug.2024-10-11_08-22-05_722620.log is fresh
+2024-10-11 11:39:06.938 | INFO     | files_work.delete_old_files:delete_old_log_files:24 - File debug.2024-10-09_10-16-16_999179.log is fresh
+2024-10-11 11:39:06.938 | INFO     | files_work.delete_old_files:delete_old_log_files:24 - File debug.log is fresh
+2024-10-11 11:39:06.938 | INFO     | files_work.pickle_files:delete_old_pickle:35 - file 10-10-2024.pickle removed
+2024-10-11 11:39:07.890 | INFO     | browser.driver_job:get_today_link:42 - 11.10.24
+2024-10-11 11:39:07.917 | INFO     | browser.driver_job:get_today_link:46 - today_link =  'https://rdk.spb.kommersant.ru:9443/rdk2/?p=RDK2SPB,NODE:2353975,NODE:2364964' 
+2024-10-11 11:39:08.100 | INFO     | browser.driver_job:get_work_map:80 - СКА СТАВИМ СРАЗУ
+2024-10-11 11:39:08.471 | INFO     | __main__:get_article_status:38 - {'СКА СТАВИМ СРАЗУ': '***&site'}
+2024-10-11 11:39:08.471 | INFO     | check_info.check_article_status:check_article_status:20 - New message was sent 
+СКА СТАВИМ СРАЗУ - ***&site
+2024-10-11 11:54:42.969 | INFO     | __main__:get_article_status:18 - 11-10-2024
+2024-10-11 11:54:42.970 | INFO     | files_work.delete_old_files:delete_old_log_files:24 - File debug.2024-10-11_08-22-05_722620.log is fresh
+2024-10-11 11:54:42.970 | INFO     | files_work.delete_old_files:delete_old_log_files:24 - File debug.2024-10-09_10-16-16_999179.log is fresh
+2024-10-11 11:54:42.970 | INFO     | files_work.delete_old_files:delete_old_log_files:24 - File debug.log is fresh
+2024-10-11 11:54:44.018 | INFO     | browser.driver_job:get_today_link:42 - 11.10.24
+2024-10-11 11:54:44.045 | INFO     | browser.driver_job:get_today_link:46 - today_link =  'https://rdk.spb.kommersant.ru:9443/rdk2/?p=RDK2SPB,NODE:2353975,NODE:2364964' 
+2024-10-11 11:54:44.272 | INFO     | browser.driver_job:get_work_map:80 - СКА СТАВИМ СРАЗУ
+2024-10-11 11:54:44.646 | INFO     | __main__:get_article_status:38 - {'СКА СТАВИМ СРАЗУ': '***&site', 'telegram_info': ['СКА СТАВИМ СРАЗУ']}
+2024-10-11 11:54:44.647 | INFO     | check_info.check_article_status:check_article_status:26 - The message was sent earlier СКА СТАВИМ СРАЗУ - ***&site
+2024-10-11 13:00:19.715 | INFO     | __main__:get_article_status:18 - 11-10-2024
+2024-10-11 13:00:19.715 | INFO     | files_work.delete_old_files:delete_old_log_files:24 - File debug.2024-10-11_08-22-05_722620.log is fresh
+2024-10-11 13:00:19.715 | INFO     | files_work.delete_old_files:delete_old_log_files:24 - File debug.2024-10-09_10-16-16_999179.log is fresh
+2024-10-11 13:00:19.715 | INFO     | files_work.delete_old_files:delete_old_log_files:24 - File debug.log is fresh
+2024-10-11 13:00:20.765 | INFO     | browser.driver_job:get_today_link:42 - 11.10.24
+2024-10-11 13:00:20.790 | INFO     | browser.driver_job:get_today_link:46 - today_link =  'https://rdk.spb.kommersant.ru:9443/rdk2/?p=RDK2SPB,NODE:2353975,NODE:2364964' 
+2024-10-11 13:00:20.984 | INFO     | browser.driver_job:get_work_map:80 - СКА СТАВИМ СРАЗУ
+2024-10-11 13:00:21.356 | INFO     | __main__:get_article_status:38 - {'СКА СТАВИМ СРАЗУ': 'RRR&site', 'telegram_info': ['СКА СТАВИМ СРАЗУ']}
+2024-10-11 13:00:21.357 | INFO     | check_info.check_article_status:check_article_status:26 - The message was sent earlier СКА СТАВИМ СРАЗУ - RRR&site
+2024-10-11 20:10:42.470 | INFO     | __main__:get_article_status:18 - 11-10-2024
+2024-10-11 20:10:42.471 | INFO     | files_work.delete_old_files:delete_old_log_files:24 - File debug.2024-10-11_08-22-05_722620.log is fresh
+2024-10-11 20:10:42.471 | INFO     | files_work.delete_old_files:delete_old_log_files:24 - File debug.2024-10-09_10-16-16_999179.log is fresh
+2024-10-11 20:10:42.471 | INFO     | files_work.delete_old_files:delete_old_log_files:24 - File debug.log is fresh
+2024-10-11 20:10:43.359 | INFO     | browser.driver_job:get_today_link:42 - 11.10.24
+2024-10-11 20:10:43.383 | INFO     | browser.driver_job:get_today_link:46 - today_link =  'https://rdk.spb.kommersant.ru:9443/rdk2/?p=RDK2SPB,NODE:2353975,NODE:2364964' 
+2024-10-11 20:10:43.557 | INFO     | browser.driver_job:get_work_map:80 - СКА СТАВИМ СРАЗУ
+2024-10-11 20:10:43.929 | INFO     | __main__:get_article_status:38 - {'СКА СТАВИМ СРАЗУ': 'E&site', 'telegram_info': ['СКА СТАВИМ СРАЗУ']}
+2024-10-11 22:16:54.913 | INFO     | __main__:get_article_status:18 - 11-10-2024
+2024-10-11 22:16:54.913 | INFO     | files_work.delete_old_files:delete_old_log_files:24 - File debug.2024-10-11_08-22-05_722620.log is fresh
+2024-10-11 22:16:54.914 | INFO     | files_work.delete_old_files:delete_old_log_files:24 - File debug.2024-10-09_10-16-16_999179.log is fresh
+2024-10-11 22:16:54.914 | INFO     | files_work.delete_old_files:delete_old_log_files:24 - File debug.log is fresh
+2024-10-11 22:16:55.843 | INFO     | browser.driver_job:get_today_link:42 - 11.10.24
+2024-10-11 22:16:55.873 | INFO     | browser.driver_job:get_today_link:46 - today_link =  'https://rdk.spb.kommersant.ru:9443/rdk2/?p=RDK2SPB,NODE:2353975,NODE:2364964' 
+2024-10-11 22:16:56.053 | INFO     | browser.driver_job:get_work_map:80 - СКА СТАВИМ СРАЗУ
+2024-10-11 22:16:56.488 | INFO     | __main__:get_article_status:38 - {'СКА СТАВИМ СРАЗУ': 'E&site', 'telegram_info': ['СКА СТАВИМ СРАЗУ']}
+2024-10-11 22:22:52.354 | INFO     | __main__:get_article_status:18 - 11-10-2024
+2024-10-11 22:22:52.354 | INFO     | files_work.delete_old_files:delete_old_log_files:24 - File debug.2024-10-11_08-22-05_722620.log is fresh
+2024-10-11 22:22:52.354 | INFO     | files_work.delete_old_files:delete_old_log_files:24 - File debug.2024-10-09_10-16-16_999179.log is fresh
+2024-10-11 22:22:52.354 | INFO     | files_work.delete_old_files:delete_old_log_files:24 - File debug.log is fresh
+2024-10-11 22:22:53.148 | INFO     | browser.driver_job:get_today_link:42 - 11.10.24
+2024-10-11 22:22:53.177 | INFO     | browser.driver_job:get_today_link:46 - today_link =  'https://rdk.spb.kommersant.ru:9443/rdk2/?p=RDK2SPB,NODE:2353975,NODE:2364964' 
+2024-10-11 22:22:53.409 | INFO     | browser.driver_job:get_work_map:80 - СКА СТАВИМ СРАЗУ
+2024-10-11 22:22:53.851 | INFO     | __main__:get_article_status:38 - {'СКА СТАВИМ СРАЗУ': 'E&site', 'telegram_info': ['СКА СТАВИМ СРАЗУ']}
+2024-10-11 22:45:55.613 | INFO     | __main__:get_article_status:18 - 11-10-2024
+2024-10-11 22:45:55.613 | INFO     | files_work.delete_old_files:delete_old_log_files:24 - File debug.2024-10-11_08-22-05_722620.log is fresh
+2024-10-11 22:45:55.614 | INFO     | files_work.delete_old_files:delete_old_log_files:24 - File debug.2024-10-09_10-16-16_999179.log is fresh
+2024-10-11 22:45:55.614 | INFO     | files_work.delete_old_files:delete_old_log_files:24 - File debug.log is fresh
+2024-10-11 22:45:56.522 | INFO     | browser.driver_job:get_today_link:42 - 11.10.24
+2024-10-11 22:45:56.553 | INFO     | browser.driver_job:get_today_link:46 - today_link =  'https://rdk.spb.kommersant.ru:9443/rdk2/?p=RDK2SPB,NODE:2353975,NODE:2364964' 
+2024-10-11 22:45:56.734 | INFO     | browser.driver_job:get_work_map:80 - СКА СТАВИМ СРАЗУ
+2024-10-11 22:45:57.171 | INFO     | __main__:get_article_status:38 - {'СКА СТАВИМ СРАЗУ': 'E&site', 'telegram_info': ['СКА СТАВИМ СРАЗУ']}
+2024-10-11 22:52:38.983 | INFO     | __main__:get_article_status:18 - 11-10-2024
+2024-10-11 22:52:38.983 | INFO     | files_work.delete_old_files:delete_old_log_files:24 - File debug.2024-10-11_08-22-05_722620.log is fresh
+2024-10-11 22:52:38.983 | INFO     | files_work.delete_old_files:delete_old_log_files:24 - File debug.2024-10-09_10-16-16_999179.log is fresh
+2024-10-11 22:52:38.983 | INFO     | files_work.delete_old_files:delete_old_log_files:24 - File debug.log is fresh
+2024-10-11 22:52:39.838 | INFO     | browser.driver_job:get_today_link:42 - 11.10.24
+2024-10-11 22:52:39.865 | INFO     | browser.driver_job:get_today_link:46 - today_link =  'https://rdk.spb.kommersant.ru:9443/rdk2/?p=RDK2SPB,NODE:2353975,NODE:2364964' 
+2024-10-11 22:52:40.064 | INFO     | browser.driver_job:get_work_map:80 - СКА СТАВИМ СРАЗУ
+2024-10-11 22:52:40.497 | INFO     | __main__:get_article_status:38 - {'СКА СТАВИМ СРАЗУ': 'E&site', 'telegram_info': ['СКА СТАВИМ СРАЗУ']}
+2024-10-12 09:28:18.907 | INFO     | __main__:get_article_status:18 - 12-10-2024
+2024-10-12 09:28:18.908 | INFO     | files_work.delete_old_files:delete_old_log_files:23 - File  debug.2024-10-11_08-22-05_722620.log deleted
+2024-10-12 09:28:18.908 | INFO     | files_work.delete_old_files:delete_old_log_files:24 - File debug.2024-10-11_08-22-05_722620.log is fresh
+2024-10-12 09:28:18.909 | INFO     | files_work.delete_old_files:delete_old_log_files:23 - File  debug.2024-10-09_10-16-16_999179.log deleted
+2024-10-12 09:28:18.909 | INFO     | files_work.delete_old_files:delete_old_log_files:24 - File debug.2024-10-09_10-16-16_999179.log is fresh
+2024-10-12 09:28:18.910 | INFO     | files_work.delete_old_files:delete_old_log_files:24 - File debug.log is fresh
+2024-10-12 09:28:18.910 | INFO     | files_work.pickle_files:delete_old_pickle:35 - file 11-10-2024.pickle removed
+2024-10-12 09:28:19.580 | INFO     | browser.driver_job:get_today_link:44 - 12.10.24
+2024-10-12 09:28:19.629 | INFO     | browser.driver_job:get_today_link:48 - today_link =  'https://rdk.spb.kommersant.ru:9443/rdk2/?p=RDK2SPB,NODE:2353975,NODE:2365116' 
+2024-10-12 09:28:19.818 | INFO     | browser.driver_job:get_work_map:82 - Литейный мост Ставим Завтра
+2024-10-12 09:28:19.828 | INFO     | browser.driver_job:get_work_map:82 - Фото Литейный мост (6 из 6)
+2024-10-12 09:28:19.837 | INFO     | browser.driver_job:get_work_map:82 - Подписи Литейный мост
+2024-10-12 09:28:20.281 | INFO     | __main__:get_article_status:38 - {'Литейный мост Ставим Завтра': 'RRR&site', 'Фото Литейный мост (6 из 6)': 'V&site', 'Подписи Литейный мост': 'CHK&site'}
+2024-10-12 09:28:20.281 | INFO     | check_info.check_article_status:check_article_status:20 - New message was sent 
+Литейный мост Ставим Завтра - RRR&site

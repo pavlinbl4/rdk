@@ -1,0 +1,9 @@
+2024-10-12 23:06:48.384 | INFO     | __main__:get_article_status:18 - 12-10-2024
+2024-10-12 23:06:48.385 | INFO     | files_work.delete_old_files:delete_old_log_files:24 - File debug.2024-10-11_11-39-06_937983.log is fresh
+2024-10-12 23:06:48.385 | INFO     | files_work.delete_old_files:delete_old_log_files:24 - File debug.log is fresh
+2024-10-12 23:07:03.163 | INFO     | browser.driver_job:get_today_link:44 - 12.10.24
+2024-10-12 23:07:03.192 | INFO     | browser.driver_job:get_today_link:48 - today_link =  'https://rdk.spb.kommersant.ru:9443/rdk2/?p=RDK2SPB,NODE:2353975,NODE:2365116' 
+2024-10-12 23:07:06.736 | INFO     | browser.driver_job:get_work_map:82 - Литейный мост Ставим Завтра
+2024-10-12 23:07:06.747 | INFO     | browser.driver_job:get_work_map:82 - Фото Литейный мост (6 из 6)
+2024-10-12 23:07:06.756 | INFO     | browser.driver_job:get_work_map:82 - Подписи Литейный мост
+2024-10-12 23:07:07.179 | INFO     | __main__:get_article_status:38 - {'Литейный мост Ставим Завтра': 'E&site', 'Фото Литейный мост (6 из 6)': 'V&site', 'Подписи Литейный мост': 'CHK&site', 'telegram_info': ['Литейный мост Ставим Завтра']}
