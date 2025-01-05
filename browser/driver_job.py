@@ -21,7 +21,7 @@ logger.disable("get_today_link")
 def create_driver():
     service = Service(GeckoDriverManager().install())
     options = FirefoxOptions()
-    # options.add_argument("--headless")
+    options.add_argument("--headless")
     return webdriver.Firefox(service=service, options=options)
 
 
@@ -42,7 +42,7 @@ def get_today_link(all_spans):
 
     logger.info(today)
     for span in all_spans:
-        logger.info(f"{span.text = }")
+        # logger.info(f"{span.text = }")
         if find_date(span.text) == today:
             today_link = span.get_attribute('href')
             logger.info(f"{today_link =  } ")
@@ -65,7 +65,7 @@ def get_spans(driver):
         raise
 
     all_spans = driver.find_elements('xpath', '//span[@id="phList"]/a')
-    logger.info(f"{len(all_spans)}")
+    # logger.info(f"{len(all_spans)}")
     return all_spans
 
 
@@ -74,7 +74,6 @@ def get_work_map(article_dict: dict):
     try:
         all_spans = get_spans(driver)
         today_link = get_today_link(all_spans)
-        logger.info(f"{today_link = }")
         driver.get(today_link)
         work_map = driver.find_elements('xpath', '//tr[@class="mapLO"]')
 
