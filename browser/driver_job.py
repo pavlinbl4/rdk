@@ -13,14 +13,15 @@ from selenium.webdriver.firefox.service import Service
 from webdriver_manager.firefox import GeckoDriverManager
 
 from time_tools.time_zone import get_city_time
+import time
 
-# logger.disable("get_today_link")
+logger.disable("get_today_link")
 
 
 def create_driver():
     service = Service(GeckoDriverManager().install())
     options = FirefoxOptions()
-    options.add_argument("--headless")
+    # options.add_argument("--headless")
     return webdriver.Firefox(service=service, options=options)
 
 
@@ -38,8 +39,10 @@ def find_date(str_with_date='№24 Пн, 25.02.24'):
 def get_today_link(all_spans):
     today = get_city_time('Europe/Moscow').strftime("%d.%m.%y")
 
+
     logger.info(today)
     for span in all_spans:
+        logger.info(f"{span.text = }")
         if find_date(span.text) == today:
             today_link = span.get_attribute('href')
             logger.info(f"{today_link =  } ")
@@ -54,13 +57,15 @@ def get_spans(driver):
 
     try:
         driver.get(rdk_logging)
+        driver.get('https://rdk.spb.kommersant.ru:9443/rdk2/?p=RDK2SPB,NODE:2353975')
+        time.sleep(2)
     except Exception as e:
         logger.error(f"Ошибка при загрузке страницы: {e}")
         driver.quit()
         raise
 
     all_spans = driver.find_elements('xpath', '//span[@id="phList"]/a')
-    # logger.info(f"{len(all_spans)}")
+    logger.info(f"{len(all_spans)}")
     return all_spans
 
 
@@ -69,6 +74,7 @@ def get_work_map(article_dict: dict):
     try:
         all_spans = get_spans(driver)
         today_link = get_today_link(all_spans)
+        logger.info(f"{today_link = }")
         driver.get(today_link)
         work_map = driver.find_elements('xpath', '//tr[@class="mapLO"]')
 
