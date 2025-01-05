@@ -17,7 +17,8 @@ def get_article_status():
     # today_filename = 'RDK'
     logger.info(today_filename)
 
-    delete_old_log_files(logs_dir)
+    deleted_logs = delete_old_log_files(logs_dir)
+    logger.info(f"Deleted {deleted_logs} old log files from {logs_dir}.")
 
     # set folder to pickle files
     pickle_folder = 'Pickle_files'
