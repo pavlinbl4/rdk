@@ -1,7 +1,7 @@
 from loguru import logger
-from check_info.telegram_dict import add_telegram_message
-from files_work.pickle_files import dump_pickle, load_pickle
-from telegram.send_message_to_telegram import send_telegram_message, SendTelegramMessage
+from rdk.check_info.telegram_dict import add_telegram_message
+from rdk.files_work.pickle_files import dump_pickle, load_pickle
+from rdk.telegram.send_message_to_telegram import send_telegram_message
 
 
 def check_article_status(today_filename, path_to_pickle_folder, article_dict):
