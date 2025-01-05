@@ -42,7 +42,3 @@ def check_article_status(today_filename, path_to_pickle_folder, article_dict):
         dump_pickle(path_to_pickle_folder, today_filename, article_dict)
         logger.info('Pickle file updated.')
 
-
-if __name__ == '__main__':
-    test_data = {'Юбилей первого выступления Утесова СТАВИМ ЗАВТРА': '***&site'}
-    check_article_status('04-03-2024', "../Pickle_files", test_data)
