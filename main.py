@@ -34,7 +34,11 @@ def get_article_status():
     article_dict = load_pickle(path_to_pickle_folder, today_filename)
 
     # get information from RDK site
-    article_dict = get_work_map(article_dict)
+    try:
+        article_dict = get_work_map(article_dict)
+    except Exception as e:
+        logger.error(f"Error while fetching work map: {e}")
+        return
     logger.info(article_dict)
 
     check_article_status(today_filename, path_to_pickle_folder, article_dict)
