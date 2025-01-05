@@ -14,7 +14,7 @@ from webdriver_manager.firefox import GeckoDriverManager
 
 from time_tools.time_zone import get_city_time
 
-logger.disable("get_today_link")
+# logger.disable("get_today_link")
 
 
 def create_driver():
@@ -43,6 +43,8 @@ def get_today_link(all_spans):
         if find_date(span.text) == today:
             today_link = span.get_attribute('href')
             logger.info(f"{today_link =  } ")
+            logger.info(f"Загружено {len(all_spans)} элементов.")
+            logger.info(f"Сегодняшняя ссылка: {today_link}")
             return today_link
 
 
