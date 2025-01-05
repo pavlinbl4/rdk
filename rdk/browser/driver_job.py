@@ -8,18 +8,26 @@ from selenium.webdriver import FirefoxOptions
 from webdriver_manager.firefox import GeckoDriverManager
 from selenium.webdriver.firefox.service import Service
 from selenium import webdriver
-from time_tools.time_zone import get_city_time
+
 import re
 from loguru import logger
 
-
+from rdk.browser.chrome_driver import chrome_driver
+from rdk.time_tools.time_zone import get_city_time
 
 logger.disable("get_today_link")
 
-service = Service(GeckoDriverManager().install())
-options = FirefoxOptions()
-options.add_argument("--headless")
-driver = webdriver.Firefox(service=service, options=options)
+
+def firefox_driver():
+    service = Service(GeckoDriverManager().install())
+    options = FirefoxOptions()
+    options.add_argument("--headless")
+    return webdriver.Firefox(service=service, options=options)
+
+driver = firefox_driver()
+
+# driver = chrome_driver()
+
 
 
 def find_article_status(article_status='GetImage.axd?kind=WF&key=E&site=RDK2SPB'):
@@ -40,7 +48,6 @@ def find_date(str_with_date='№24 Пн, 25.02.24'):
 
 def get_today_link(all_spans):
     today = get_city_time('Europe/Moscow').strftime("%d.%m.%y")
-    # today = '04.03.24'
     logger.info(today)
     for span in all_spans:
         if find_date(span.text) == today:
@@ -56,9 +63,6 @@ def get_spans():
     driver.get('https://rdk.spb.kommersant.ru:9443/rdk2/?p=RDK2SPB,NODE:2353975')
     # driver.save_screenshot('rdk_page.png')
 
-    # save page as html
-    # save_html_page(driver, 'rdk_page.html')
-
     all_spans = driver.find_elements('xpath', '//span[@id="phList"]/a')
     # logger.info(f"{len(all_spans)}")
     return all_spans
@@ -68,9 +72,6 @@ def get_work_map(article_dict: dict):
     all_spans = get_spans()
     today_link = get_today_link(all_spans)
     driver.get(today_link)  # '//tr[@class="mapLO"][2]/td[6]/img'
-
-    # save page as html
-    # save_html_page(driver, 'rdk_today')
 
     work_map = driver.find_elements('xpath', '//tr[@class="mapLO"]')
 
