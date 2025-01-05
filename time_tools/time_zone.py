@@ -14,6 +14,3 @@ def get_city_time(city):
     # return now.strftime("%H:%M:%S - %H:%M")
 
 
-if __name__ == '__main__':
-    print(get_city_time('Europe/London').strftime("%Y:%M:%d"))  # => 14:15:23
-    print(get_city_time('Europe/Moscow'))
