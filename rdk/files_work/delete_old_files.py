@@ -4,7 +4,7 @@ import os
 from icecream import ic
 from loguru import logger
 
-from files_work.check_existing_file import create_dir
+from rdk.files_work.check_existing_file import create_dir
 
 ic.disable()
 
