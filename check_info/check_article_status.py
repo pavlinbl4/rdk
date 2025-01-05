@@ -18,7 +18,7 @@ def check_article_status(today_filename, path_to_pickle_folder, article_dict):
         if article_name == 'telegram_info':
             continue
 
-        logger.info(f'Processing: {article_name} - {article_status}')
+        # logger.info(f'Processing: {article_name} - {article_status}')
 
         try:
             if article_status in {'***&site', 'RRR&site'}:
