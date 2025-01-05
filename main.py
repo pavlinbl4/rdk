@@ -8,7 +8,7 @@ from loguru import logger
 import os
 
 logs_dir = create_dir('Logs')
-logger.add(f'{logs_dir}/debug.log', rotation="10:00")
+logger.add(f'{logs_dir}/debug.log', rotation="10:00", retention="3 days", compression="zip")
 
 
 def get_article_status():
@@ -17,8 +17,8 @@ def get_article_status():
     # today_filename = 'RDK'
     logger.info(today_filename)
 
-    deleted_logs = delete_old_log_files(logs_dir)
-    logger.info(f"Deleted {deleted_logs} old log files from {logs_dir}.")
+    # deleted_logs = delete_old_log_files(logs_dir)
+    # logger.info(f"Deleted {deleted_logs} old log files from {logs_dir}.")
 
     # set folder to pickle files
     pickle_folder = 'Pickle_files'
@@ -33,14 +33,15 @@ def get_article_status():
         dump_pickle(path_to_pickle_folder, today_filename)
 
     article_dict = load_pickle(path_to_pickle_folder, today_filename)
-
+    logger.info(article_dict)
     # get information from RDK site
     try:
         article_dict = get_work_map(article_dict)
+
     except Exception as e:
         logger.error(f"Error while fetching work map: {e}")
         return
-    logger.info(article_dict)
+
 
     check_article_status(today_filename, path_to_pickle_folder, article_dict)
 
