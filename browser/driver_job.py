@@ -80,10 +80,10 @@ def get_work_map(article_dict: dict):
         work_map = driver.find_elements('xpath', '//tr[@class="mapLO"]')
 
         logger.info(f"{len(work_map) = }")
-        for x in range(1, len(work_map)):
-            logger.info(f"{work_map[x] = }")
+        for x in range(len(work_map)):
+            # logger.info(f"{work_map[x] = }")
             all_trs = work_map[x].find_elements('xpath', 'td')
-            logger.info(f'{all_trs = }')
+            # logger.info(f'{all_trs = }')
             article_name = all_trs[0].text
             article_status = find_article_status(all_trs[5].find_element('xpath', 'img').get_attribute('src'))
             article_dict[article_name] = article_status
