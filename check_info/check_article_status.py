@@ -8,7 +8,7 @@ def check_article_status(today_filename, path_to_pickle_folder, article_dict):
     # Сохраняем начальные данные
     dump_pickle(path_to_pickle_folder, today_filename, article_dict)
     article_dict = load_pickle(path_to_pickle_folder, today_filename)
-    logger.info(article_dict)
+    logger.info(f"{article_dict = }")
     article_dict.setdefault('telegram_info', [])
 
     updated = False  # Флаг, чтобы записывать файл только если есть изменения
@@ -18,7 +18,7 @@ def check_article_status(today_filename, path_to_pickle_folder, article_dict):
         if article_name == 'telegram_info':
             continue
 
-        # logger.info(f'Processing: {article_name} - {article_status}')
+        logger.info(f'Processing: {article_name} - {article_status}')
 
         try:
             if article_status in {'***&site', 'RRR&site'}:
