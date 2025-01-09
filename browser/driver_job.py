@@ -21,7 +21,7 @@ logger.disable("get_today_link")
 def create_driver():
     service = Service(GeckoDriverManager().install())
     options = FirefoxOptions()
-    options.add_argument("--headless")
+    # options.add_argument("--headless")
     return webdriver.Firefox(service=service, options=options)
 
 
@@ -45,8 +45,8 @@ def get_today_link(all_spans):
         # logger.info(f"{span.text = }")
         if find_date(span.text) == today:
             today_link = span.get_attribute('href')
-            logger.info(f"{today_link =  } ")
-            logger.info(f"Загружено {len(all_spans)} элементов.")
+            # logger.info(f"{today_link =  } ")
+            # logger.info(f"Загружено {len(all_spans)} элементов.")
             logger.info(f"Сегодняшняя ссылка: {today_link}")
             return today_link
 
@@ -58,7 +58,8 @@ def get_spans(driver):
     try:
         driver.get(rdk_logging)
         driver.get('https://rdk.spb.kommersant.ru:9443/rdk2/?p=RDK2SPB,NODE:2353975')
-        time.sleep(2)
+        #  https://rdk.spb.kommersant.ru:9443/rdk2/?p=RDK2SPB,NODE:2353975
+        time.sleep(3)
     except Exception as e:
         logger.error(f"Ошибка при загрузке страницы: {e}")
         driver.quit()
@@ -75,10 +76,14 @@ def get_work_map(article_dict: dict):
         all_spans = get_spans(driver)
         today_link = get_today_link(all_spans)
         driver.get(today_link)
+        time.sleep(3)
         work_map = driver.find_elements('xpath', '//tr[@class="mapLO"]')
 
+        logger.info(f"{len(work_map) = }")
         for x in range(1, len(work_map)):
+            logger.info(f"{work_map[x] = }")
             all_trs = work_map[x].find_elements('xpath', 'td')
+            logger.info(f'{all_trs = }')
             article_name = all_trs[0].text
             article_status = find_article_status(all_trs[5].find_element('xpath', 'img').get_attribute('src'))
             article_dict[article_name] = article_status
