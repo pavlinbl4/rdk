@@ -7,3 +7,50 @@
 2024-10-12 23:07:06.747 | INFO     | browser.driver_job:get_work_map:82 - Фото Литейный мост (6 из 6)
 2024-10-12 23:07:06.756 | INFO     | browser.driver_job:get_work_map:82 - Подписи Литейный мост
 2024-10-12 23:07:07.179 | INFO     | __main__:get_article_status:38 - {'Литейный мост Ставим Завтра': 'E&site', 'Фото Литейный мост (6 из 6)': 'V&site', 'Подписи Литейный мост': 'CHK&site', 'telegram_info': ['Литейный мост Ставим Завтра']}
+2025-02-17 22:11:12.979 | INFO     | __main__:get_article_status:18 - 17-02-2025
+2025-02-17 22:11:12.980 | INFO     | files_work.pickle_files:delete_old_pickle:41 - File 12-10-2024.pickle removed
+2025-02-17 22:11:12.980 | INFO     | files_work.pickle_files:dump_pickle:25 - path_to_pickle_folder = '/Volumes/big4photo/_PYTHON/rdk/files_work/Pickle_files'
+2025-02-17 22:11:12.981 | INFO     | files_work.pickle_files:dump_pickle:32 - File 17-02-2025 updated
+2025-02-17 22:11:12.981 | INFO     | __main__:get_article_status:36 - {}
+2025-02-17 22:11:19.996 | ERROR    | browser.driver_job:get_spans:64 - Ошибка при загрузке страницы: Message: invalid type: null, expected a string at line 1 column 12
+
+2025-02-17 22:11:20.610 | ERROR    | __main__:get_article_status:42 - Error while fetching work map: Message: invalid type: null, expected a string at line 1 column 12
+
+2025-02-17 22:11:41.207 | INFO     | __main__:get_article_status:18 - 17-02-2025
+2025-02-17 22:11:41.208 | INFO     | __main__:get_article_status:36 - {}
+2025-02-17 22:11:44.605 | ERROR    | browser.driver_job:get_spans:64 - Ошибка при загрузке страницы: Message: invalid type: null, expected a string at line 1 column 12
+
+2025-02-17 22:11:45.197 | ERROR    | __main__:get_article_status:42 - Error while fetching work map: Message: invalid type: null, expected a string at line 1 column 12
+
+2025-02-17 22:12:58.381 | INFO     | __main__:get_article_status:18 - 17-02-2025
+2025-02-17 22:12:58.381 | INFO     | __main__:get_article_status:36 - {}
+2025-02-17 22:13:01.735 | ERROR    | browser.driver_job:get_spans:64 - Ошибка при загрузке страницы: Message: invalid type: null, expected a string at line 1 column 12
+
+2025-02-17 22:13:02.344 | ERROR    | __main__:get_article_status:42 - Error while fetching work map: Message: invalid type: null, expected a string at line 1 column 12
+
+2025-02-17 22:14:14.455 | INFO     | __main__:get_article_status:18 - 17-02-2025
+2025-02-17 22:14:14.455 | INFO     | __main__:get_article_status:36 - {}
+2025-02-17 22:14:24.490 | INFO     | browser.driver_job:get_today_link:43 - 17.02.25
+2025-02-17 22:14:24.549 | INFO     | browser.driver_job:get_today_link:50 - Сегодняшняя ссылка: https://rdk.spb.kommersant.ru:9443/rdk2/?p=RDK2SPB,NODE:2353975,NODE:2370751
+2025-02-17 22:14:28.034 | INFO     | browser.driver_job:get_work_map:82 - len(work_map) = 5
+2025-02-17 22:14:28.050 | INFO     | browser.driver_job:get_work_map:90 - Промо Патриоты
+2025-02-17 22:14:28.063 | INFO     | browser.driver_job:get_work_map:90 - Доп информация
+2025-02-17 22:14:28.080 | INFO     | browser.driver_job:get_work_map:90 - бордель на утро
+2025-02-17 22:14:28.093 | INFO     | browser.driver_job:get_work_map:90 - интервью на утро
+2025-02-17 22:14:28.105 | INFO     | browser.driver_job:get_work_map:90 - ремонт в детскосельском на утро
+2025-02-17 22:14:28.752 | INFO     | files_work.pickle_files:dump_pickle:25 - path_to_pickle_folder = '/Volumes/big4photo/_PYTHON/rdk/files_work/Pickle_files'
+2025-02-17 22:14:28.753 | INFO     | files_work.pickle_files:dump_pickle:32 - File 17-02-2025 updated
+2025-02-17 22:14:28.753 | INFO     | check_info.check_article_status:check_article_status:11 - article_dict = {'Промо Патриоты': 'E&site', 'Доп информация': 'V&site', 'бордель на утро': 'E&site', 'интервью на утро': '***&site', 'ремонт в детскосельском на утро': 'E&site'}
+2025-02-17 22:14:28.754 | INFO     | check_info.check_article_status:check_article_status:21 - Processing: Промо Патриоты - E&site
+2025-02-17 22:14:28.754 | INFO     | check_info.check_article_status:check_article_status:33 - No action required for: Промо Патриоты - E&site
+2025-02-17 22:14:28.754 | INFO     | check_info.check_article_status:check_article_status:21 - Processing: Доп информация - V&site
+2025-02-17 22:14:28.754 | INFO     | check_info.check_article_status:check_article_status:33 - No action required for: Доп информация - V&site
+2025-02-17 22:14:28.754 | INFO     | check_info.check_article_status:check_article_status:21 - Processing: бордель на утро - E&site
+2025-02-17 22:14:28.754 | INFO     | check_info.check_article_status:check_article_status:33 - No action required for: бордель на утро - E&site
+2025-02-17 22:14:28.754 | INFO     | check_info.check_article_status:check_article_status:21 - Processing: интервью на утро - ***&site
+2025-02-17 22:14:28.754 | INFO     | check_info.check_article_status:check_article_status:26 - Sending new message: интервью на утро - ***&site
+2025-02-17 22:14:29.047 | INFO     | check_info.check_article_status:check_article_status:21 - Processing: ремонт в детскосельском на утро - E&site
+2025-02-17 22:14:29.047 | INFO     | check_info.check_article_status:check_article_status:33 - No action required for: ремонт в детскосельском на утро - E&site
+2025-02-17 22:14:29.047 | INFO     | files_work.pickle_files:dump_pickle:25 - path_to_pickle_folder = '/Volumes/big4photo/_PYTHON/rdk/files_work/Pickle_files'
+2025-02-17 22:14:29.047 | INFO     | files_work.pickle_files:dump_pickle:32 - File 17-02-2025 updated
+2025-02-17 22:14:29.068 | INFO     | check_info.check_article_status:check_article_status:43 - Pickle file updated.
